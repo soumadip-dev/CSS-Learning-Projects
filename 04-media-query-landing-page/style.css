@@ -1,0 +1,239 @@
+/* General reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Nav Container Styling */
+.nav-container {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+/* Nav Section 1 Styling: Circles */
+.nav-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.circle {
+  background-color: black;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+/* Nav Section 2 Styling: Text Links */
+.nav-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-section2 h4 {
+  font-size: 16px;
+  font-weight: 553;
+}
+
+.nav-section2 h5 {
+  display: none;
+}
+
+.nav-section2 h4 span {
+  color: rgb(114, 114, 117);
+  margin-left: 20px;
+}
+
+/* Nav Links Styling: Main Links */
+.nav-links {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  padding: 0 50px;
+}
+
+.nav-links h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Main content styling */
+main {
+  height: calc(100% - 150px);
+  width: 100%;
+}
+
+/* Text content styling */
+#text-content {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/* Scrollbar styling for text content */
+#text-content::-webkit-scrollbar {
+  background-color: transparent;
+  height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+.elem {
+  flex-shrink: 0;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elem h2 {
+  font-size: 6vw;
+  font-weight: 7;
+}
+
+/* Image content styling */
+#image-content {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#image-content img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Hide scrollbar for image content */
+#image-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Media queries for responsive design */
+
+/* Styles for screens smaller than 767px */
+@media all and (max-width: 767px) {
+  .nav-container {
+    padding: 0 25px;
+  }
+
+  .nav-section1 {
+    gap: 0px;
+  }
+
+  .circle {
+    height: 16px;
+    width: 16px;
+  }
+
+  .nav-section2 {
+    gap: 30px;
+  }
+
+  .nav-section2 h4 {
+    display: none;
+  }
+
+  .nav-section2 h4:nth-child(1) {
+    display: initial;
+    margin-right: 25px;
+  }
+
+  .nav-section2 h5 {
+    display: initial;
+  }
+
+  .nav-section2 h5 i {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .nav-section2 h4 span {
+    margin-left: 10px;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    padding: 0 25px;
+    gap: 10px;
+  }
+
+  .nav-links h3 {
+    font-size: 2.5vw;
+  }
+
+  main {
+    height: calc(100% - 140px);
+  }
+
+  #text-content {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  #text-content::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .elem {
+    width: fit-content;
+    margin: 0 90px;
+  }
+
+  .elem h2 {
+    font-size: 18vw;
+    white-space: nowrap;
+    font-weight: 300;
+  }
+
+  #image-content {
+    height: 65%;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  #image-content img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+}
+
+/* Styles for screens between 768px and 1023px */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .nav-links {
+    justify-content: space-between;
+    padding: 0 25px;
+    gap: 10px;
+  }
+
+  .nav-links h3 {
+    font-size: 2vw;
+  }
+}
