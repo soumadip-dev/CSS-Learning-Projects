@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#ff4e50, #f9d423);
+}
+
+.wrapper {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+.wrapper h1 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 40px;
+}
+.mainContainer {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.innerContainer {
+  width: 32%;
+  height: 45%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.innerContainer:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+  transition: 0.9s;
+}
+.innerContainer img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+  object-fit: cover;
+}
+.innerContainer img:hover {
+  filter: grayscale(0%);
+}
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  height: 40%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  border-radius: 0 0 10px 10px;
+  /* use https://cssgradient.io/ to generate gradient */
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+.innerContainer:hover .description {
+  opacity: 1;
+  transform: scale(1.03);
+}
