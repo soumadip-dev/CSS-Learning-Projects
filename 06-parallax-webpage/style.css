@@ -1,0 +1,170 @@
+/* CSS stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Wrapper styling */
+#wrapper {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+/* Container styling */
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+/* Parallax background images styling */
+.background {
+  transform: translateZ(-40px) scale(5);
+}
+.foreground {
+  transform: translateZ(-20px) scale(3);
+}
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Title styling */
+h1 {
+  font-family: "Anurati", sans-serif;
+  position: absolute;
+  top: 5rem;
+  font-size: 10rem;
+  letter-spacing: 4px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section styling */
+section {
+  background: linear-gradient(to right, #394f89, #4b5fc2, #9df6fc, #e0fcfd);
+  color: white;
+  padding: 5rem 0;
+}
+
+/* Section heading styling */
+.secHeading {
+  font-size: 5rem;
+  padding: 0 10rem;
+}
+
+/* Text styling */
+.text {
+  font-size: 1.5rem;
+  margin: 5rem 0;
+  padding: 0 10rem;
+}
+
+/* Background image and button container styling */
+.bg {
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background image URLs */
+.bg1 {
+  background-image: url(./images/sport-1.jpg);
+}
+.bg2 {
+  background-image: url(./images/sport-2.jpg);
+}
+.bg3 {
+  background-image: url(./images/sport-3.jpg);
+}
+
+/* Button styling */
+.button {
+  position: relative;
+  background-color: #f4fdfd;
+  padding: 0.5rem 2.5rem;
+  color: #4b5fc2;
+  font-size: 16px;
+  border: 0.3rem solid #4b5fc2;
+  border-radius: 0.5em;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+  box-shadow: 2px 2px 150px 25px rgb(122, 185, 206);
+}
+
+/* Button text styling */
+.button h2 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 3em;
+}
+
+/* Button span animation */
+.button h2 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #8594df;
+  transform: translateY(150%);
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+/* Button hover effect */
+.button:hover {
+  color: white;
+}
+
+/* Button hover span animation */
+.button:hover h2 span {
+  transform: translateY(0) scale(2);
+}
+
+/* Button hover span positioning */
+.button:hover h2 span:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+.button:hover h2 span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.1s;
+}
+.button:hover h2 span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.2s;
+}
+.button:hover h2 span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.3s;
+}
