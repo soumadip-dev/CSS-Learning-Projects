@@ -1,0 +1,306 @@
+/* Importing the 'Be Vietnam Pro' font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+/* Universal selector: Applies to all elements on the page */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+/* Global variable */
+:root {
+  --first-color: #6e57e0;
+  --bgOrange: #e84940;
+}
+
+/* Wrapper class */
+#wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Container class */
+.container {
+  width: 62.5vw;
+  margin: 0 auto;
+}
+
+/* Navbar section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.logo {
+  width: 30px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.logo-text {
+  margin-left: 0.2rem;
+  font-size: 28px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.nav-items div {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-items div a {
+  color: black;
+}
+
+.nav-items div a:hover {
+  font-weight: bold;
+  color: var(--first-color);
+  transition: 0.8s;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End of Navbar section */
+
+/* Start  of Hero Section */
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  padding-bottom: 8rem;
+}
+
+.hero-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.faded-text {
+  user-select: none;
+  font-size: 7em;
+  color: rgb(231, 231, 231);
+  bottom: -16%;
+  left: -5%;
+  font-weight: bold;
+  transition: all 3s;
+  position: absolute;
+}
+
+.hero-section-heading {
+  font-size: 35px;
+  color: #343d68;
+  font-weight: 500;
+}
+.role {
+  color: #4e45d5;
+  font-weight: 800;
+}
+
+.hero-section-sub-heading {
+  font-size: 45px;
+  line-height: 45px;
+}
+.hero-section-description {
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+.btn-pink {
+  background-color: var(--bgOrange);
+  width: fit-content;
+  padding: 0.8rem 2.3rem;
+  color: white;
+  font-size: 18px;
+  box-shadow: 5px 5px 7px 0px #0000003f;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.8s;
+  overflow: hidden;
+  border-radius: 24.3px;
+}
+
+.btn-pink::after {
+  content: "";
+  position: absolute;
+  background-color: #f9f8f8;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all linear 0.3s;
+  z-index: -1;
+}
+
+.btn-pink:hover::after {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+.btn-pink:hover {
+  color: black;
+  border: 3px solid var(--bgOrange);
+}
+
+.hero-section-right {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+.user-image {
+  padding: 2.5rem;
+  filter: grayscale(1);
+  transition: all 1s;
+  animation: scaleImage 5s linear infinite;
+}
+
+.user-image img {
+  height: 400px;
+  z-index: -8;
+}
+
+@keyframes scaleImage {
+  0% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: none;
+    transform: scale(1.1);
+    filter: grayscale(1);
+    box-shadow: 3px 3px 10px black;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+}
+
+.icon-dots {
+  z-index: 9;
+  bottom: -1rem;
+  right: 0;
+  animation-name: dotsAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dotsAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.icon-cube {
+  z-index: 9;
+  top: -0.8rem;
+  right: 1em;
+  animation-name: cubeRotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cubeRotate {
+  0% {
+    transform: translateY(0px) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(15px) rotateY(180deg);
+  }
+  100% {
+    transform: translateY(0px) rotateY(360deg);
+  }
+}
+
+.icon-circle {
+  z-index: 9;
+  left: 0;
+  bottom: 0;
+  animation-name: shakeEffect;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shakeEffect {
+  50% {
+    left: 5%;
+    bottom: 7%;
+  }
+}
+
+.icon-zigzag {
+  z-index: 9;
+  top: 1.5em;
+  left: -0.3em;
+  animation-name: zigzagAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes zigzagAnimation {
+  50% {
+    left: 5%;
+    top: 2%;
+  }
+}
+
+.icon-plus {
+  z-index: 9;
+  top: -0.8rem;
+  left: 50%;
+  animation: shakeEffectPlus 5s ease-in infinite;
+}
+
+@keyframes shakeEffectPlus {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    top: 3%;
+    left: 48%;
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* End hero section */
