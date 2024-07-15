@@ -304,3 +304,167 @@ a {
 }
 
 /* End hero section */
+
+/* Start Project section */
+.project-section {
+  background-color: rgba(231, 231, 231, 0.685);
+  margin-top: 4rem;
+}
+.page-header {
+  color: var(--bgOrange);
+  font-size: 90px;
+  padding-top: 30px;
+  text-align: center;
+}
+.project-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.project-card {
+  width: 90%;
+  height: 550px;
+  background-image: url(./Images/projects/Project1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 0px 40px #1f1f1f;
+  z-index: 0;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1f1f1f9a;
+  transform: scaleX(1);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s;
+  z-index: 1;
+}
+
+.project-card:hover::before {
+  transform: scale(1);
+}
+
+.project-number {
+  position: absolute;
+  font-size: 200px;
+  font-weight: 600;
+  color: white;
+  z-index: 10;
+  opacity: 0;
+}
+.project-card:hover .project-number {
+  opacity: 1;
+  /* transition: all 0.4s; */
+}
+
+.project-number-right {
+  right: -40px;
+  top: -45px;
+}
+
+.project-number-left {
+  left: -40px;
+  top: -45px;
+}
+.project-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2em;
+  bottom: 20%;
+  z-index: 5;
+  gap: 1em;
+  transition: all 0.4s;
+}
+
+.project-content-right {
+  right: 10%;
+}
+.project-content-left {
+  left: 10%;
+}
+
+.project-skill-container {
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.project-skill {
+  width: 40px;
+}
+
+.project-heading {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.project-subheading {
+  width: 70%;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.btn-grp {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  transition: all 0.4s;
+}
+.icon:hover {
+  color: var(--bgOrange);
+}
+
+.project-card:hover .project-content {
+  transform: scale(1.1);
+}
+#project1 {
+  background-image: url(images/projects/Project1.jpg);
+}
+
+#project2 {
+  margin-left: 120px;
+  background-image: url(images/projects/Project2.jpg);
+}
+
+#project3 {
+  background-image: url(images/projects/Project3.jpg);
+}
+
+#project4 {
+  margin-left: 120px;
+  background-image: url(images/projects/Project4.png);
+}
+
+.project-browse-btn {
+  margin: -2rem auto 0;
+}
+
+/* End of Project section */
