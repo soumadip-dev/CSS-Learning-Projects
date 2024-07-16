@@ -468,3 +468,83 @@ a {
 }
 
 /* End of Project section */
+
+/* Skill section start */
+.skills-container {
+  position: relative;
+  display: flex;
+  padding: 5rem;
+  margin: 10rem auto;
+  gap: 30px;
+}
+.skill-container-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.resume-btn {
+  margin-top: 1rem;
+}
+
+.skill-heading {
+  font-size: 50px;
+  font-style: bold;
+  color: var(--bgOrange);
+}
+.caps {
+  font-size: 90px;
+}
+
+.skill-subHeading {
+  margin-top: 1rem;
+  width: 85%;
+  text-align: justify;
+}
+.skill-subHeading p {
+  margin: 15px 0;
+}
+
+.skill-container-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  position: relative;
+  gap: 2rem;
+  justify-content: center;
+}
+.skill-fade-text {
+  position: absolute;
+  font-style: bold;
+  font-size: 15em;
+  font-weight: bold;
+  color: rgba(231, 231, 231, 0.637);
+  bottom: -34.5%;
+  overflow-y: hidden;
+  right: -29%;
+  user-select: none;
+}
+
+.blob-style {
+  position: absolute;
+  z-index: -5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blobAnimate 3s linear infinite;
+}
+@keyframes blobAnimate {
+  50% {
+    top: 54%;
+    left: 46%;
+  }
+}
+.skills-logo {
+  width: 90px;
+  transition: all 0.5s;
+}
+
+.skills-logo:hover {
+  transform: scale(1.2);
+}
+
+/* Skill section end */
