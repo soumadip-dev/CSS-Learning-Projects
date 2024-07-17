@@ -548,3 +548,152 @@ a {
 }
 
 /* Skill section end */
+/* Qualification section start */
+.qualification-section {
+  padding-top: 1rem;
+  text-align: center;
+  background-color: rgba(231, 231, 231, 0.685);
+}
+.qualification-heading {
+  font-size: 360px;
+  margin-bottom: 40px;
+  color: var(--bgOrange);
+  padding-top: 2rem;
+  font-size: 5em;
+  color: var(--bgOrange);
+  font-style: bold;
+}
+
+.qualification-subheading {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #343d68aa;
+  font-weight: bold;
+  text-align: center;
+  z-index: -5;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding-bottom: 2rem;
+}
+.q_container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.q_container:nth-child(1) {
+  animation-delay: 0s;
+}
+.q_container:nth-child(2) {
+  animation-delay: 1s;
+}
+.q_container:nth-child(3) {
+  animation-delay: 2s;
+}
+.q_container:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.text-box {
+  text-align: left;
+  padding: 20px 30px;
+  background: var(--first-color);
+  color: white;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.left-q_container {
+  left: 0;
+}
+.right-q_container {
+  left: 50%;
+}
+
+.timeline_img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.right-q_container .timeline_img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 4s linear forwards;
+}
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100;
+  }
+}
+
+.text-box h2 {
+  font-weight: 600;
+}
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.text-box a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.left-q_container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid var(--first-color);
+  right: -15px;
+}
+
+.right-q_container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid var(--first-color);
+  left: -15px;
+}
+
+/* Qualification section end */
