@@ -77,6 +77,19 @@ a {
   text-decoration: none;
 }
 
+/**************** Media Queries START *****************/
+@media (max-width: 1500px) {
+  .nav-items {
+    padding: 0 8em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-items {
+    display: none;
+  }
+}
+/**************** Media Queries END *****************/
 /* End of Navbar section */
 
 /* Start  of Hero Section */
