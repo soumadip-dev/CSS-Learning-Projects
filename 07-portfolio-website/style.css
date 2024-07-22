@@ -316,6 +316,49 @@ a {
   }
 }
 
+/**************** Media Queries START *****************/
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding-bottom: 0;
+  }
+
+  .faded-text {
+    display: none;
+  }
+
+  .hero-section-left {
+    order: 2;
+  }
+
+  .hero-section-right {
+    order: 1;
+    margin-top: 2rem;
+  }
+
+  .user-image {
+    padding: 0;
+  }
+
+  .hero-section-description {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .btn-pink {
+    order: 3;
+    margin: 0 auto;
+  }
+  .role {
+    font-weight: 800;
+    font-size: 28px;
+  }
+}
+
+/**************** Media Queries END *****************/
+
 /* End hero section */
 
 /* Start Project section */
@@ -480,6 +523,81 @@ a {
   margin: -2rem auto 0;
 }
 
+/**************** Media Queries START *****************/
+
+@media (max-width: 1300px) {
+  .project-container {
+    width: 100%;
+  }
+  .project-browse-btn {
+    margin: -2rem auto 0;
+  }
+  .page-header {
+    padding-top: 30px;
+    color: var(--bgOrange);
+    text-align: center;
+    font-size: 40px;
+  }
+  .project-browse-btn {
+    margin: -2rem auto 0;
+  }
+  .project-container {
+    padding: 5px;
+    margin: 10px;
+    gap: 60px;
+  }
+  .project-card {
+    width: 100%;
+    height: 300px;
+  }
+  .project-card {
+    background-size: cover;
+    background-position: center;
+  }
+  .project-content {
+    scale: 0.5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .project-content-left {
+    left: 0;
+  }
+  .project-heading {
+    font-size: 40px;
+    width: 100%;
+  }
+  .project-sub-heading {
+    width: 100%;
+  }
+  #project2 {
+    margin-left: 0;
+  }
+  #project4 {
+    margin-left: 0;
+  }
+  .project-skill-container {
+    width: 100%;
+  }
+  .project-skill {
+    width: 35px;
+  }
+  .project-card:hover .project-number {
+    display: none;
+  }
+  .project-card:hover .project-content {
+    scale: 0.55;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-browse-btn {
+    margin: 0 auto;
+  }
+}
+
+/**************** Media Queries END *****************/
 /* End of Project section */
 
 /* Skill section start */
