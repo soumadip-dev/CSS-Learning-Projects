@@ -909,6 +909,7 @@ a {
 }
 /**************** Media Queries END *****************/
 /* Qualification section end */
+
 /* contactme section start */
 .contactme-section {
   padding: 50px;
@@ -997,7 +998,26 @@ textarea:focus {
   margin-right: 10px;
   color: var(--first-color);
 }
+/**************** Media Queries START *****************/
+
+@media screen and (max-width: 768px) {
+  .contactme-container {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contactme-heading {
+    font-size: 30px;
+  }
+}
+
+/**************** Media Queries END *****************/
+
 /* contactme section end*/
+
 /* footer section start */
 .footer-section {
   background: #343d68;
@@ -1086,4 +1106,26 @@ textarea:focus {
   margin: 0px 5px;
 }
 
+/**************** Media Queries START *****************/
+
+@media screen and (max-width: 768px) {
+  .footer-faded-text {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .link-wrapper ul {
+    flex-direction: column;
+  }
+  .link-wrapper ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .icon-wrapper a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+/**************** Media Queries END *****************/
 /* footer section end*/
