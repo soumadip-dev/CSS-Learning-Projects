@@ -1,0 +1,149 @@
+/* General reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Nav Container Styling */
+nav {
+  height: 10vh;
+  width: 100%;
+  margin-top: 40px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+nav h1 {
+  font-weight: 800;
+  font-size: 2.8vw;
+  font-family: serif;
+  letter-spacing: -2px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 40%;
+  flex: 1;
+}
+nav h1::after {
+  content: "©";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  font-size: 1.2vw;
+  position: absolute;
+  top: 14%;
+  right: 31%;
+}
+nav h1::before {
+  content: "Photography";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+  font-size: 1vw;
+  position: absolute;
+  letter-spacing: -1px;
+  top: 59%;
+  right: 33%;
+  color: #666;
+}
+nav h2 {
+  height: 100%;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  font-size: 1.5vw;
+  cursor: pointer;
+  font-weight: 550;
+}
+nav h2:nth-of-type(4) {
+  border-right: none;
+  width: 12%;
+}
+#nav-ber h2:nth-last-child(2) {
+  width: 29%;
+}
+nav h3 {
+  display: none;
+}
+
+/* Main content styling */
+main {
+  height: 100%;
+  width: 100%;
+}
+/* Styling the first hero section */
+#hero-1 {
+  height: 90%;
+  width: 100%;
+  position: relative;
+  padding: 2vw 4vw 4vw 4vw;
+}
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#overlay {
+  height: 54%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3vw;
+  color: white;
+}
+#overlay-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+#overlay-1 :nth-child(1) {
+  font-family: sans-serif;
+  font-size: 3.6vw;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+#overlay-1 :nth-child(2) {
+  font-size: 1vw;
+  padding: 2vw 2.1vw;
+  border: 1px solid #ffff;
+  border-right: 4px solid #fff;
+  border-radius: 50%;
+}
+#overlay-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid white;
+  padding: 0.5vw 0;
+}
+
+#overlay-2 h4 {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+#overlay-2 img {
+  width: 4vw;
+}
