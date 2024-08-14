@@ -147,3 +147,39 @@ main {
 #overlay-2 img {
   width: 4vw;
 }
+
+/* Styling the scroller */
+#scroll {
+  width: 100%;
+  height: 30vh;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 2vw;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  animation: animations 10s linear infinite;
+}
+
+@keyframes animations {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#scroll img {
+  width: 10vw;
+  border-radius: 50%;
+  height: 20vh;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 3.2vw;
+}
