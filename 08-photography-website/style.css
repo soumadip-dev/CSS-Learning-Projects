@@ -183,3 +183,47 @@ main {
   object-position: center;
   margin-left: 3.2vw;
 }
+/* Styling the alphabet section */
+
+#alphabet {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#alphabet h5 {
+  font-size: 1.7vw;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  letter-spacing: 4px;
+  margin-right: 2vw;
+}
+
+#alphabet h6 {
+  font-size: 1vw;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  border: 2px solid rgb(0, 0, 0, 0);
+  border-radius: 50%;
+  padding: 0.5vw 0.6vw;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+#alphabet h6:hover {
+  border: 2px solid rgb(0, 0, 0);
+}
+#alphabet h6:nth-child(9),
+#alphabet h6:nth-child(11),
+#alphabet h6:nth-child(15),
+#alphabet h6:nth-child(18),
+#alphabet h6:nth-child(22) {
+  color: grey;
+}
