@@ -227,3 +227,55 @@ main {
 #alphabet h6:nth-child(22) {
   color: grey;
 }
+/* Styling the second hero section */
+#hero-2 {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  padding: 4vw 6vw 0 6vw;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero2-part1 {
+  height: 100%;
+  width: 56%;
+}
+#hero2-part1 img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}
+#hero2-part1 h3 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-top: 1vh;
+  font-size: 2.5vw;
+  font-weight: 900;
+}
+#hero2-part2 {
+  height: 100%;
+  width: 40%;
+}
+#hero2-part2 img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+#hero2-part2-text {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+  justify-content: space-between;
+}
+#left-text {
+  font-size: 1.7vw;
+  width: 35%;
+}
+#right-text {
+  font-size: 1.1vw;
+  width: 50%;
+  display: flex;
+  font-weight: 100;
+  margin-top: -3vw;
+}
