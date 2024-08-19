@@ -279,3 +279,59 @@ main {
   font-weight: 100;
   margin-top: -3vw;
 }
+/*  Styling the Third hero section*/
+#hero-3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 4vw 6vw 0 6vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero-3.circularText {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#hero-3 .imgContainer {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  background-image: url(./Assets/h3_photo.jpg);
+  background-size: cover;
+  background-position: top;
+}
+#hero-3 .circularText .images {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#hero-3 .circularText .images .circleAnimation {
+  animation: anime 10s linear infinite;
+  mix-blend-mode: multiply;
+}
+#hero-3 .circularText .images .arrows {
+  position: absolute;
+  mix-blend-mode: difference;
+}
+@keyframes anime {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#hero-3 .circularText .textContainer h6 {
+  font-size: 1.8vw;
+  font-weight: 100;
+  margin-left: 5%;
+  width: 90%;
+}
