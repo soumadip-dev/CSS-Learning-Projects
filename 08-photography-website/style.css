@@ -183,6 +183,7 @@ main {
   object-position: center;
   margin-left: 3.2vw;
 }
+
 /* Styling the alphabet section */
 
 #alphabet {
@@ -279,6 +280,7 @@ main {
   font-weight: 100;
   margin-top: -3vw;
 }
+
 /*  Styling the Third hero section*/
 #hero-3 {
   width: 100%;
@@ -335,6 +337,7 @@ main {
   margin-left: 5%;
   width: 90%;
 }
+
 /*  Styling the Fourth hero section*/
 #hero-4 {
   width: 100%;
@@ -346,4 +349,72 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: top;
+}
+/*  Styling the Fifth hero section*/
+#hero-5 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 5vw 4vw;
+}
+#hero-5 > h2 {
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 3.2vw;
+  margin-bottom: 7vh;
+  font-weight: 1000;
+  letter-spacing: 0.2vw;
+}
+.hero-5-elem {
+  height: 15vh;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  position: relative;
+}
+.hero-5-elem:nth-last-child(1) {
+  border-bottom: 2px solid black;
+}
+.hero-5-elem:hover {
+  background-color: rgb(211, 211, 211);
+  transition: 0ms;
+}
+.hero-5-elem img {
+  position: absolute;
+  left: 5%;
+  width: 18vw;
+  height: 30vh;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20%;
+  opacity: 0;
+  transition: all ease 0.4s;
+  z-index: 99;
+}
+.hero-5-elem:hover img {
+  opacity: 1;
+  left: 24%;
+}
+
+.hero-5-elem h4 {
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 6%;
+}
+.hero-5-elem .elem-part2 {
+  width: 45%;
+}
+.elem-part2 h2 {
+  font-size: 2.7vw;
+  font-weight: 500;
+}
+.elem-part2 h5 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
 }
