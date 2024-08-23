@@ -489,3 +489,15 @@ main {
   background-position: top;
   background-size: cover;
 }
+/*  Styling the seventh hero section*/
+#hero-7 {
+  width: 100%;
+  height: 100vh;
+  padding: 3vw 6vw;
+}
+#hero-7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
