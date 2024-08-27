@@ -548,3 +548,34 @@ main {
   display: flex;
   font-weight: 100;
 }
+
+/* Styling the marque section */
+#marque {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0.4vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#marque h2 {
+  display: inline-block;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-family: sans-serif;
+  margin-right: 18px;
+  letter-spacing: 2px;
+  animation: marqueanima 10s linear infinite;
+}
+@keyframes marqueanima {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 22px));
+  }
+}
