@@ -579,3 +579,51 @@ main {
     transform: translateX(calc(-100% - 22px));
   }
 }
+/* Styling the ninths hero section */
+#hero-9 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 4vw 6vw 0 6vw;
+  gap: 2vw;
+  justify-content: space-between;
+}
+#hero9-part1 {
+  width: 20%;
+}
+#hero9-part1 h3 {
+  font-size: 2vw;
+  font-weight: 900;
+}
+#hero9-part2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  width: 43.5%;
+}
+#part2-top {
+  font-size: 2vw;
+}
+#part2-bottom {
+  height: 60%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1589386417686-0d34b5903d23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==%20);
+  background-position: center;
+  background-size: cover;
+}
+#hero9-part3 {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+#part3-top {
+  font-size: 2vw;
+}
+#part3-bottom {
+  height: 60%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==);
+  background-position: center;
+  background-size: cover;
+}
