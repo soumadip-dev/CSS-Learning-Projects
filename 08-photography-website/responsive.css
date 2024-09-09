@@ -1,0 +1,273 @@
+@media all and (max-width: 767px) {
+  /* Nav Container Styling */
+  nav {
+    height: 8vh;
+    margin-top: 20px;
+    padding: 0 5vw;
+  }
+  nav h1 {
+    font-size: 5.8vw;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  nav h1::after {
+    display: none;
+  }
+  nav h1::before {
+    display: none;
+  }
+
+  nav h2 {
+    display: none;
+  }
+
+  nav h3 {
+    display: initial;
+  }
+
+  /* Styling the first hero section */
+  #hero-1 {
+    height: fit-content;
+  }
+
+  #overlay-1 :nth-child(1) {
+    font-size: 4.8vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  #overlay-1 :nth-child(2) {
+    font-size: 1vw;
+    padding: 3vw 3.1vw;
+  }
+
+  #overlay-2 h4 {
+    font-size: 3vw;
+  }
+
+  #overlay-2 img {
+    width: 5vw;
+  }
+  /* Styling the scroller */
+  #scroll {
+    width: 100%;
+    height: 20vh;
+  }
+  #container {
+    height: 100%;
+    width: 210%;
+  }
+  #scroll img {
+    width: 15.3%;
+    height: 95%;
+    margin: 1vw;
+  }
+
+  /* Styling the alphabet section */
+
+  #alphabet {
+    height: 8vh;
+  }
+  #alphabet h5 {
+    font-size: 3.7vw;
+  }
+
+  #alphabet h6 {
+    font-size: 3vw;
+  }
+
+  #alphabet h6:nth-child(13),
+  #alphabet h6:nth-child(14),
+  #alphabet h6:nth-child(15),
+  #alphabet h6:nth-child(16),
+  #alphabet h6:nth-child(17),
+  #alphabet h6:nth-child(18),
+  #alphabet h6:nth-child(19),
+  #alphabet h6:nth-child(20),
+  #alphabet h6:nth-child(21),
+  #alphabet h6:nth-child(22),
+  #alphabet h6:nth-child(23),
+  #alphabet h6:nth-child(24) {
+    display: none;
+  }
+
+  /* Styling the second hero section */
+  #hero-2 {
+    width: 100%;
+    height: 70vh;
+    padding: 4vw 6vw 0 6vw;
+  }
+
+  #hero2-part1 img {
+    height: 56vh;
+  }
+  #hero2-part1 h3 {
+    font-size: 3vw;
+  }
+  #hero2-part2 {
+    height: 100%;
+    width: 40%;
+  }
+  #hero2-part2 img {
+    height: 75%;
+  }
+
+  #left-text {
+    font-size: 2.2vw;
+    width: 35%;
+  }
+  #right-text {
+    font-size: 2vw;
+  }
+
+  /*  Styling the Third hero section*/
+  #hero-3 {
+    height: 67vh;
+    padding: 0 6vw 0 6vw;
+  }
+
+  #hero-3 .imgContainer {
+    height: 95%;
+  }
+  #hero-3 .circularText .images {
+    height: 40vh;
+  }
+  #hero-3 .circularText .textContainer h6 {
+    font-size: 2.5vw;
+    font-weight: 100;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  /*  Styling the Fourth hero section*/
+  #hero-4 {
+    height: 70vh;
+    padding: 1vw 6vw;
+  }
+  #hero-4 img {
+    object-position: center;
+  }
+
+  /*  Styling the Fifth hero section*/
+  #hero-5 {
+    height: 57vh;
+  }
+  #hero-5 > h2 {
+    font-size: 6vw;
+  }
+  .hero-5-elem {
+    height: 8vh;
+    width: 100%;
+  }
+
+  .hero-5-elem img {
+    width: 15vw;
+    height: 10vh;
+  }
+  .hero-5-elem h4 {
+    font-size: 2.1vw;
+  }
+  .elem-part2 h2 {
+    font-size: 3.5vw;
+  }
+  .elem-part2 h5 {
+    font-size: 1.8vw;
+  }
+
+  /*  Styling the Sixth hero section*/
+  #hero-6 {
+    height: 70vh;
+    padding: 1vw 6vw;
+  }
+  #hero6-part2-text {
+    padding-bottom: 1vw;
+  }
+  #hero6-part2-text h2 {
+    font-size: 3.8vw;
+  }
+  #hero6-part2-text p:nth-child(2) {
+    font-size: 3vw;
+  }
+  #hero6-part2-text p:nth-child(3) {
+    font-size: 2.1vw;
+  }
+  /*  Styling the seventh hero section*/
+  #hero-7 {
+    height: 70vh;
+    padding: 1vw 6vw;
+  }
+
+  /* Styling the eighth hero section */
+  #hero-8 {
+    height: 70vh;
+    padding: 2vw 6vw 0 6vw;
+  }
+
+  #hero8-part1 img {
+    height: 63vh;
+    object-position: center;
+  }
+
+  #hero8-part2 img {
+    height: 65%;
+  }
+  #left-text {
+    font-size: 2.8vw;
+  }
+  #right-text {
+    font-size: 2vw;
+  }
+
+  /* Styling the marque section */
+  #marque {
+    padding: 0.3vw;
+  }
+  #marque h2 {
+    font-size: 2vw;
+    font-weight: 100;
+  }
+
+  /* Styling the ninths hero section */
+  #hero-9 {
+    height: 63vh;
+  }
+  #hero9-part1 h3 {
+    font-size: 4vw;
+  }
+
+  #part2-top {
+    font-size: 2.7vw;
+  }
+  #part2-bottom {
+    height: 70%;
+  }
+
+  #part3-top {
+    font-size: 2.7vw;
+  }
+  #part3-bottom {
+    height: 70%;
+  }
+
+  /* Styling the footer section */
+  footer {
+    height: 30vh;
+  }
+  #footer-part1 h2 {
+    font-size: 5vw;
+  }
+  #footer-part2 {
+    font-size: 1.3vw;
+  }
+  #footer-part3 {
+    font-size: 1.3vw;
+  }
+  #footer-part4 {
+    font-size: 2.3vw;
+  }
+  #p4-bottom #icons i {
+    font-size: 2.7vw;
+  }
+}
