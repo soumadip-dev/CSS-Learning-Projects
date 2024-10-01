@@ -227,3 +227,84 @@ body {
   border-radius: 3.125rem;
   cursor: pointer;
 }
+
+/* Placeholder for additional page content */
+#page2 {
+  width: 100%;
+  position: relative;
+  padding: 4.375rem;
+  padding-top: 12.5rem;
+}
+
+#page2 h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3.125rem;
+  margin-bottom: 3.125rem;
+}
+
+.box {
+  height: 20rem;
+  width: 25rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  display: inline-block;
+  margin: 1.1875rem;
+  position: relative;
+}
+
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.box-bottom {
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.63));
+  position: absolute;
+  bottom: -40%;
+  transition: all ease 0.5s;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+.box-bottom #icon i {
+  background-color: white;
+  padding: 0.5rem 0.5625rem;
+  color: #000;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  border-radius: 50%;
+  justify-content: flex-end;
+  margin: 0.3125rem;
+}
+.box-bottom h5 {
+  font-size: 1.125rem;
+  width: 70%;
+}
+.box:hover .box-bottom {
+  bottom: 0;
+}
+.box:hover {
+  box-shadow: 0 0.125rem 1.25rem rgba(123, 123, 123, 0.498); /* 0 2px 20px */
+}
+
+#page2-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 button {
+  padding: 1.1875rem;
+  font-weight: 400;
+  border: 0.0625rem solid black;
+  color: black;
+  border-radius: 3.125rem;
+  font-size: 1.0625rem;
+  margin: 1.875rem 0 5.9375rem 0;
+  cursor: pointer;
+}
