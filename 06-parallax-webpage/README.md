@@ -1,22 +1,20 @@
 # Simple-Parallax-WebPage_CSS
 
-This project demonstrates the creation of a simple parallax effect web page using HTML and CSS. The parallax effect generates an illusion of depth by moving different elements at varying speeds as the user scrolls down the page.
+This project showcases a simple parallax effect webpage using **HTML** and **CSS**. The parallax effect creates depth by moving elements at different speeds as you scroll.
 
-## Features
+## 🌟 Features
 
-- The parallax effect is achieved through CSS transforms.
-- Custom fonts are used for the headings.
+- **Parallax Effect**: Achieved with CSS transforms for a smooth scrolling experience.
+- **Custom Fonts**: Unique fonts enhance the visual appeal.
 
-## Technologies Used
+## 💻 Tech Stack
 
-- HTML
-- CSS
+- **HTML5**
+- **CSS3**
 
-## Credits
+## 📋 Credits
 
-- Fonts:
-  - The "Anurati" font is used for the headings.
-  - The "Gilroy" font is used for the general text.
-- Images:
-  - The background and foreground images used in the parallax effect are included.
-
+- **Fonts**:
+  - "Anurati" for headings
+  - "Gilroy" for general text
+- **Images**: Includes background and foreground images for the parallax effect
