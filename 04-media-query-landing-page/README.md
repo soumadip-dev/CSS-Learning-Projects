@@ -1,1 +1,0 @@
-This repository contains a practice project focused on HTML and CSS, aimed at enhancing skills in front-end web development. The project features a simple webpage with structured navigation, text content, and image content. The webpage design is responsive, adapting to different screen sizes using media queries.
