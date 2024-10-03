@@ -1,13 +1,19 @@
-# My Portfolio
+# 💼 My Portfolio
 
-Welcome to my personal portfolio, built using HTML, CSS, and JavaScript. It showcases my projects, skills, and education.
+Welcome to my personal portfolio, created using **HTML**, **CSS**, and **JavaScript**. It highlights my projects, skills, and education.
 
-## Live Link
+### 🌐 Live Link
 
-Explore the portfolio: [soumadipmajila.netlify.app](https://soumadipmajila.netlify.app/)
+Check out the portfolio: [soumadipmajila.netlify.app](https://soumadipmajila.netlify.app/)
 
-## Features
+## 🌟 Features
 
-- Responsive design
-- Projects showcase
-- Contact form
+- **Responsive Design**
+- **Projects Showcase**
+- **Contact Form**
+
+## 💻 Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
