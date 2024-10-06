@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Page and body styling */
@@ -122,7 +122,7 @@ body {
   line-height: 4.375rem;
   font-weight: 400;
   letter-spacing: 0.05625rem;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin: 3.25rem 0 2rem 0;
 }
@@ -330,7 +330,7 @@ body {
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0.05625rem;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 #join p {
