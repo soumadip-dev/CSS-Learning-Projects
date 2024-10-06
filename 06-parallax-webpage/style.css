@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
 }
 html,
 body {
@@ -14,7 +14,7 @@ body {
 /* Wrapper styling */
 #wrapper {
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
@@ -49,7 +49,7 @@ body {
 
 /* Title styling */
 h1 {
-  font-family: "Anurati", sans-serif;
+  font-family: 'Anurati', sans-serif;
   position: absolute;
   top: 5rem;
   font-size: 10rem;
