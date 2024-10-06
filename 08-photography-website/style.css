@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Questrial", sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 html,
@@ -40,8 +40,8 @@ nav h1 {
   flex: 1;
 }
 nav h1::after {
-  content: "©";
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  content: '©';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
   font-size: 1.2vw;
   position: absolute;
@@ -49,8 +49,8 @@ nav h1::after {
   right: 31%;
 }
 nav h1::before {
-  content: "Photography";
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  content: 'Photography';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 200;
   font-size: 1vw;
   position: absolute;
@@ -652,8 +652,8 @@ footer {
   position: relative;
 }
 #footer-part1 h2::after {
-  content: "©";
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  content: '©';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
   font-size: 1.2vw;
   position: absolute;
@@ -661,8 +661,8 @@ footer {
   right: 33%;
 }
 #footer-part1 h2::before {
-  content: "Photography";
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  content: 'Photography';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 200;
   font-size: 1vw;
   position: absolute;
