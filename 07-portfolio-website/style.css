@@ -1,5 +1,5 @@
 /* Importing the 'Be Vietnam Pro' font from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 
 /* Universal selector: Applies to all elements on the page */
 * {
@@ -7,7 +7,7 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 /* Global variable */
 :root {
@@ -160,7 +160,7 @@ a {
 }
 
 .btn-pink::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #f9f8f8;
   top: 50%;
@@ -392,7 +392,7 @@ a {
 }
 
 .project-card::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -403,7 +403,7 @@ a {
 }
 
 .project-card::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -811,7 +811,7 @@ a {
 }
 
 .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 100%;
