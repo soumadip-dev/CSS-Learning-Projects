@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
 }
 html,
 body {
@@ -13,7 +13,7 @@ body {
 
 .wrapper {
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
